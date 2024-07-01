@@ -27,7 +27,7 @@ public class Reference
     }
 
 
-    // Conditional display
+    // Conditional display method
     public string GetDisplayText()
     {
         if (_startVerse == _endVerse)

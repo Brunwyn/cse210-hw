@@ -31,7 +31,7 @@ public class Word
     }
 
 
-    // display or output
+    // display or output method ,, is the how to instruction
     public string GetDisplayText()
     {
         return _isHidden ? new string('_', _text.Length) : _text;
