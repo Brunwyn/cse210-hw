@@ -6,7 +6,9 @@ public class Reference
     private int _startVerse;
     private int _endVerse;
 
-    
+    /* 
+    Same shenanigans here my past constructors were goofy and this is aparently the solution
+    */
     // Constructor bioyos
     public Reference(string book, int chapter, int verse)
     {
