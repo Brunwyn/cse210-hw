@@ -20,9 +20,12 @@ class Program
 
         // example of using the program to memorize a preset reference
         Reference reference = new Reference("John", 3, 16);
-        Scripture scripture = new Scripture(reference, "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.");
+        Scripture scripture = new Scripture(reference, "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life (three).");
 
         // conditional while loop
+        // After each round of hiding words, the program checks if all words are hidden using the IsCompletelyHidden method.
+        // If all words are hidden, the main loop will end, and the program will terminate.
+        // not looping one last time
         while (!scripture.IsCompletelyHidden())
         {
             Console.Clear();
@@ -32,7 +35,7 @@ class Program
 
             if (input.ToLower() == "quit")
                 break;
-
+            // Hide 3 new words at a time, unfortunately the end is left with two that then don't get hidden. seems to be the program skipps the last loop
             scripture.HideRandomWords(3);
         }
 

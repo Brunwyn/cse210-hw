@@ -30,10 +30,7 @@ public class Word
         return _isHidden;
     }
 
-    /*
-    this part I was stuck & this is the solution Ai gave. What the world is even happening here
-    what is the ? doing, looking at bool? 
-    */
+
     // display or output
     public string GetDisplayText()
     {
