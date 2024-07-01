@@ -5,8 +5,19 @@ class Program
 {
     static void Main(string[] args)
     {
-        // example of print to console
-        Console.WriteLine("Hello Sandbox World!");
+        // example of formatted print to console
+        int num_repeats = 20;
+        string what_to_repeat = "--";
+        string repeatedChar = "";
+        for (int i = 0; i < num_repeats; i++)
+        {
+            repeatedChar += what_to_repeat;
+        }
+
+        Console.WriteLine($"\n{repeatedChar}\nHello Sandbox World!\n{repeatedChar}\n");
+
+
+        
 
         // Get a string, Strings (a sequence of characters, including letters, numbers, or symbols)
         Console.Write("What is your favorite color? ");
